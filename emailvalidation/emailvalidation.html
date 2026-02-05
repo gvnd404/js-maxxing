@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Email Validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f2;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.9rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            outline: none;
+            transition: 0.2s ease;
+        }
+
+        /* invalid email */
+
+
+        /* valid email */
+
+        .hint {
+            margin-top: 0.6rem;
+            font-size: 0.85rem;
+            color: #666;
+            display: none;
+        }
+
+        button {
+            margin-top: 1.8rem;
+            width: 100%;
+            padding: 0.9rem;
+            border: none;
+            border-radius: 8px;
+            background: #457b9d;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d3557;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Password Validator</h2>
+
+        <form>
+            <label for="password">Password</label>
+            <input autocomplete="off" type="password" id="password" placeholder="" required />
+
+            <div class="hint">
+                Enter a valid password.
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>
