@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: helvetica;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a heading</h1>
+    <script>
+        const car = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        }
+
+        const calc = {
+            add: function (a, b) {
+                return a + b
+            }
+        }
+
+        const students = {
+            student1: {
+                name: 'Govind',
+                age: 20,
+                campus: 'Dharamshala',
+                hobbies: ['Book Reading', 'Programming', 'Running', 'Travelling', 'Trying new things'],
+                school: 'NavGurukul'
+            },
+            student2: {
+                name: 'Govind',
+                age: 20,
+                campus: 'Dharamshala',
+                hobbies: ['Book Reading', 'Programming', 'Running', 'Travelling', 'Trying new things'],
+                school: 'NavGurukul'
+            }
+        }
+
+        // const person = {
+        //     firstName: 'Govind',
+        //     lastName: 'Sharma',
+        //     age: 50,
+        //     fullName: function () {
+        //         return this.firstName + ' ' + this.lastName;
+        //     }
+        // }
+        const heading = document.querySelector('h1');
+        let individual = {
+            name: 'Govind',
+            age: 20,
+            employed: false,
+            occupation: this.age + "year old student"
+        }
+        // Create an Object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // // Build a Text
+        // let text = "";
+        // for (let x in person) {
+        //     text += person[x] + " ";
+        // };
+        // console.log(text);
+
+        // Create an Array
+        const myArray = Object.values(person);
+
+        // Stringify the Array
+        // let text = myArray.toString();
+        const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
+
+        let text = "";
+        for (let [fruit, value] of Object.entries(fruits)) {
+            text += fruit + ": " + value + "<br>";
+        }
+    </script>
+</body>
+
+</html>
