@@ -5,7 +5,7 @@ console.log("JS Loaded");
 -------------------------- */
 
 async function fetchStudents() {
-    const response = await fetch("students.json");
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const students = await response.json();
     return students;
 }
@@ -27,14 +27,15 @@ async function displayStudents() {
 
         // Insert Bootstrap card inside column
         col.innerHTML = `
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title">${student.name}</h5>
-          <p class="card-text">Course: ${student.course}</p>
-          <p class="card-text">Marks: ${student.marks}</p>
-        </div>
-      </div>
-    `;
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">${student.name}</h5>
+      <p class="card-text">Email: ${student.email}</p>
+      <p class="card-text">City: ${student.address.city}</p>
+    </div>
+  </div>
+`;
+
 
         // 🔴 THIS is what makes it visible
         studentRow.appendChild(col);
