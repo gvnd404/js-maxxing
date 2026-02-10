@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Aarav Sharma",
+        "age": 20,
+        "course": "Computer Science",
+        "marks": 82.5,
+        "isActive": true,
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Neha Verma",
+        "age": 21,
+        "course": "Information Technology",
+        "marks": 88,
+        "isActive": true,
+        "skills": [
+            "Python",
+            "SQL"
+        ]
+    }
+]

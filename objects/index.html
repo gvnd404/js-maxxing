@@ -84,12 +84,26 @@
 
         // Stringify the Array
         // let text = myArray.toString();
-        const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
+        // const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
 
-        let text = "";
-        for (let [fruit, value] of Object.entries(fruits)) {
-            text += fruit + ": " + value + "<br>";
+        // let text = "";
+        // for (let [fruit, value] of Object.entries(fruits)) {
+        //     text += fruit + ": " + value + "<br>";
+        // }
+
+        // Let us write constructor function
+
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
         }
+
+        const fruits = new Map();
+        fruits.set("apples", 10);
+        fruits.set("banana", 10);
+        fruits.set("grapes", 10);
     </script>
 </body>
 
